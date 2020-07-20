@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <welcome></welcome>
+    <progress-circle-bar></progress-circle-bar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProgressCircleBar from './components/ProgressCircleBar.vue'
+import Welcome from './components/Welcome.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ProgressCircleBar,
+    Welcome
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+    margin: 0;
+    height: 4000px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
 </style>
